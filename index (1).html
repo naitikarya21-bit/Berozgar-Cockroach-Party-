@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Berojgar Cockroach Party (BCP)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+    body {
+      background: linear-gradient(135deg, #fffbe8 60%, #eeffc6 100%);
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #323232;
+    }
+    header {
+      background: #54be6a;
+      color: white;
+      padding: 25px 10px;
+      text-align: center;
+      border-bottom: 8px solid #ffd600;
+      position: relative;
+    }
+    .bcp-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .bcp-logo svg {
+      width: 110px;
+      height: 110px;
+    }
+    h1 {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 2.5em;
+      letter-spacing: 3px;
+      margin: 0;
+    }
+    .subtitle {
+      font-size: 1.2em;
+      margin: 10px 0 0 0;
+    }
+    section {
+      max-width: 860px;
+      margin: 40px auto;
+      background: #ffffffcc;
+      border-radius: 18px;
+      box-shadow: 0 4px 20px rgba(60,33,0,0.11);
+      padding: 32px 25px;
+      text-align: center;
+    }
+    .cockroach-row {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      margin: 22px 0;
+      flex-wrap: wrap;
+    }
+    .cockroach-photo {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      border: 3px solid #ffb62d;
+      background: #fff9ef;
+      box-shadow: 0 2px 8px #ebc96466;
+      display: inline-block;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .cockroach-photo:hover {
+      transform: rotate(-10deg) scale(1.09);
+      border-color: #4dcc78;
+    }
+    .party-desc {
+      font-size: 1.06em;
+      line-height: 1.7;
+      margin: 22px 0 17px 0;
+    }
+    .party-motto {
+      font-family: 'Luckiest Guy', cursive;
+      color: #f3740a;
+      font-size: 1.35em;
+    }
+    .member-avatars {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      margin: 38px 0 20px 0;
+      flex-wrap: wrap;
+    }
+    .member-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 85px;
+    }
+    .member-icon img {
+      width: 50px;
+      height: 50px;
+      border-radius: 30%;
+      background: #d6ffb8;
+      margin-bottom: 7px;
+      border: 2px solid #c8e58a;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.98em;
+      color: #4e4e4e;
+      background: #fbfdea;
+      border-top: 1px solid #ccc;
+      padding: 28px 0;
+    }
+    @media (max-width: 786px) {
+      section { padding: 2vw 1vw; }
+      h1 { font-size: 2em; }
+      .cockroach-row, .member-avatars { gap: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bcp-logo">
+      <!-- BCP Party Custom Logo, SVG Inline -->
+      <svg viewBox="0 0 200 200">
+        <ellipse cx="100" cy="95" rx="53" ry="80" fill="#895634"/>
+        <!-- Cockroach legs -->
+        <line x1="40" y1="68" x2="5" y2="40" stroke="#554433" stroke-width="7" />
+        <line x1="45" y1="93" x2="10" y2="110" stroke="#554433" stroke-width="7" />
+        <line x1="60" y1="120" x2="15" y2="170" stroke="#554433" stroke-width="7" />
+        <line x1="160" y1="70" x2="195" y2="45" stroke="#554433" stroke-width="7" />
+        <line x1="155" y1="105" x2="185" y2="120" stroke="#554433" stroke-width="7" />
+        <line x1="140" y1="135" x2="190" y2="180" stroke="#554433" stroke-width="7" />
+        <!-- Cockroach head -->
+        <ellipse cx="100" cy="40" rx="32" ry="32" fill="#b4752d"/>
+        <!-- Antennae -->
+        <path d="M82 23 Q60 4 25 15" stroke="#3d2f23" stroke-width="4" fill="none"/>
+        <path d="M118 23 Q165 3 176 25" stroke="#3d2f23" stroke-width="4" fill="none"/>
+        <!-- Trees (green circles) -->
+        <circle cx="38" cy="140" r="16" fill="#55b477"/>
+        <rect x="35" y="156" width="6" height="25" fill="#78662d" />
+        <circle cx="170" cy="150" r="18" fill="#65d689"/>
+        <rect x="167" y="168" width="6" height="25" fill="#78662d" />
+        <!-- People icons -->
+        <circle cx="82" cy="185" r="11" fill="#f8c67d" />
+        <rect x="78" y="196" width="8" height="16" fill="#5fe86e" />
+        <circle cx="122" cy="181" r="12" fill="#e7ae63" />
+        <rect x="118" y="193" width="8" height="17" fill="#ef891e" />
+      </svg>
+      <div style="font-family:'Luckiest Guy',cursive; font-size:1.13em; letter-spacing:2px;">B.C.P.</div>
+    </div>
+    <h1>Berojgar Cockroach Party</h1>
+    <div class="subtitle">The Most Unusual, Creative, and Fun Party!</div>
+  </header>
+  <section>
+    <div class="party-desc">
+      Welcome to the <b>Berojgar Cockroach Party (BCP)</b>, a group for all creative minds who want to make some noise and fun on the internet!<br>
+      We are not a political party&mdash;we are a community that celebrates being unique and “unemployed” in its own quirky way.<br>
+      <br>
+      <span class="party-motto">“Hustle, Laugh, and Crawl Forward!”</span>
+    </div>
+    <!-- Cockroach Photos -->
+    <div class="cockroach-row">
+      <img class="cockroach-photo" src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=facearea&w=400&h=400&facepad=3&q=80" alt="Cockroach 1">
+      <img class="cockroach-photo" src="https://cdn.pixabay.com/photo/2019/11/08/09/22/insect-4609162_1280.jpg" alt="Cockroach 2">
+      <img class="cockroach-photo" src="https://cdn.pixabay.com/photo/2017/02/06/20/22/cockroach-2043571_1280.jpg" alt="Cockroach 3">
+      <img class="cockroach-photo" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=facearea&w=400&h=400&facepad=4&q=80" alt="Cockroach 4">
+    </div>
+    <div style="margin-top:35px;font-size:1.2em;color:#1a8437;font-weight:bold;">Our Weird Yet Wonderful Members</div>
+    <div class="member-avatars">
+      <div class="member-icon">
+        <img src="https://cdn.pixabay.com/photo/2021/03/25/14/36/person-6128794_1280.png" alt="Member 1">
+        <span>Raj<br><small>“Chief Berojgar”</small></span>
+      </div>
+      <div class="member-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" alt="Member 2">
+        <span>Anjali<br><small>“Tree Lover”</small></span>
+      </div>
+      <div class="member-icon">
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/cartoon-2020275_1280.png" alt="Member 3">
+        <span>Manas<br><small>“The Crawler”</small></span>
+      </div>
+      <div class="member-icon">
+        <img src="https://cdn.pixabay.com/photo/2013/07/12/13/56/person-147114_1280.png" alt="Member 4">
+        <span>Aditya<br><small>“Job Seeker”</small></span>
+      </div>
+    </div>
+    <div style="margin-top:22px;">
+      <b>Come, join us and let's have some fun together!</b><br>
+      Stay connected, share memes, support each other, and be proud to be a part of <span style="color:#f3740a;">BCP</span>!<br><br>
+      <a href="mailto:join.bcp@funparty.com" style="background:#4dcc78;color:white;padding:10px 22px;border-radius:10px;font-size:1.13em;text-decoration:none;margin-top:10px;display:inline-block;">Join BCP Now</a>
+    </div>
+  </section>
+  <footer>
+    &copy; 2026 Berojgar Cockroach Party (BCP). Made for fun, not for politics.<br>
+    Website created with ❤️ by Copilot.
+  </footer>
+</body>
+</html>
